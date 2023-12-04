@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Build Your Meal Plan!</h1>
+        <p>Name: Johnathan Adams</p>
+        <p>Course & Section: WEB-115.0002</p>
+    </header>
+    <main>
+        <form id="mealPlan">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="goal">Goal for the Week:</label>
+            <textarea id="goal" name="goal" rows="4" required></textarea>
+
+            <h2>Meal Planner</h2>
+            <label for="monday">Monday:</label>
+            <input type="text" id="monday" name="monday" required>
+
+            <label for="monday">Tuesday:</label>
+            <input type="text" id="tuesday" name="tuesday" required>
+
+            <label for="monday">Wednesday:</label>
+            <input type="text" id="wednesday" name="wednesday" required>
+
+            <label for="monday">Thursday:</label>
+            <input type="text" id="thursday" name="thursday" required>
+
+            <label for="monday">Friday:</label>
+            <input type="text" id="friday" name="friday" required>
+
+            <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+            <button type="button" onclick="printMealPlan()">Print/Download Meal Plan</button>
+            <button type="button" onclick="clearMealPlan()">Clear Meal Plan</button>
+        </form>
+    </main>
+    <script src="projectJS.js"></script>
+</body>
+</html>
